@@ -25,7 +25,7 @@ SECRET_KEY = '=arc1bvps7=o4+-z-f(aw*x2v$r%3v(j=rjbw5tt^4!n%f2&79'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'loacalhost']
 
 
 # Application definition
