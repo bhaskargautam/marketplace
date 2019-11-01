@@ -46,9 +46,20 @@ class Task(models.Model):
     def __str__(self):
         return self.name
 
-""" Todo: Rating Model.
 class UserRating(models.Model):
-    for_user = models.ForeignKey(User)
-    from_user = models.ForeignKey(User)
-    rating = models.CharField(max_length=1)
-"""
+    ONE = '1'
+    TWO = '2'
+    THREE = '3'
+    FOUR = '4'
+    FIVE = '5'
+
+    RATINGS = [
+            (ONE, 'One'),
+            (TWO, 'Two'),
+            (THREE, 'Three'),
+            (FOUR, 'Four'),
+            (FIVE, 'Five')
+        ]
+    for_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='for_user')
+    from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='from_user')
+    rating = models.CharField(max_length=1, choices=RATINGS, default=ONE)
