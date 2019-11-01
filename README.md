@@ -19,3 +19,9 @@ A sample application using python's django framework to manage service requests 
     python manage.py loaddata main/fixtures/initial_data.json
     python manage.py runserver
 ```
+
+## Sample Users
+SuperUser = Username: bhaskar Password: bhaskar
+Worker 1 = Username: worker1 Password: worker1
+Worker 2 = Username: worker2 Password: worker2
+Consumer 1 = Username: consumer1 Password: consumer1
