@@ -15,5 +15,7 @@ A sample application using python's django framework to manage service requests 
 ```
     cd tasks
     pip3 install -r requirements.txt
+    python manage.py migrate
+    python manage.py loaddata main/fixtures/initial_data.json
     python manage.py runserver
 ```
