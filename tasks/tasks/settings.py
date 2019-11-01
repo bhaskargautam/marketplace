@@ -25,7 +25,7 @@ SECRET_KEY = '=arc1bvps7=o4+-z-f(aw*x2v$r%3v(j=rjbw5tt^4!n%f2&79'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'loacalhost', 'bhaskarmarketplace.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'bhaskarmarketplace.herokuapp.com']
 
 
 # Application definition
@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main',
+    'rest_framework',
+    'rest_framework_swagger'
 ]
 
 MIDDLEWARE = [
@@ -70,6 +72,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tasks.wsgi.application'
 
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

@@ -20,8 +20,9 @@ A sample application using python's django framework to manage service requests 
     python manage.py runserver
 ```
 
-## Sample Users
-SuperUser = Username: bhaskar Password: bhaskar
-Worker 1 = Username: worker1 Password: worker1
-Worker 2 = Username: worker2 Password: worker2
-Consumer 1 = Username: consumer1 Password: consumer1
+## Sample Users for https://bhaskarmarketplace.herokuapp.com/admin/
+* SuperUser = Username: bhaskar Password: bhaskar
+* Worker 1 = Username: worker1 Password: worker1
+* Worker 2 = Username: worker2 Password: worker2
+* Consumer 1 = Username: consumer1 Password: consumer1
+
