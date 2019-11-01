@@ -9,3 +9,11 @@ A sample application using python's django framework to manage service requests 
 ## Models
 * TaskCategory
 * Task
+
+## How to run
+
+```
+    cd tasks
+    pip3 install -r requirements.txt
+    python manage.py runserver
+```
